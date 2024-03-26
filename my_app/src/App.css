@@ -1,0 +1,200 @@
+/* App.css */
+
+/* Basic CSS reset to ensure consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font and background setup for the entire app */
+body {
+  font-family: 'Roboto', sans-serif; /* 'Roboto' font is known for its readability and modern appearance */
+  background-color: #F0F2F5; /* Light grey background for a clean look */
+  color: #333; /* Dark grey color for text provides good contrast */
+}
+
+/* Header styles for branding and navigation */
+.header {
+  background-color: #4CAF50; /* Green color for header bar */
+  padding: 1rem 0; /* Vertical padding for header */
+  color: white; /* White text for contrast against the green background */
+}
+
+.header .logo {
+  font-size: 1.5rem; /* Larger font size for logo to stand out */
+  font-weight: bold; /* Bold font weight for emphasis */
+  text-decoration: none; /* No underline on logo text */
+  color: inherit; /* Inherits white color from parent */
+  margin-left: 1rem; /* Spacing from the left edge */
+}
+
+/* Navigation bar styles */
+.navigation {
+  display: flex; /* Flexible box layout for navigation items */
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  justify-content: center; /* Centers navigation items horizontally */
+}
+
+.navigation a {
+  text-decoration: none; /* No underline on navigation links */
+  color: white; /* White text color for readability */
+  padding: 0.5rem 1rem; /* Padding around navigation links */
+  display: block; /* Block display for better click area */
+}
+
+.navigation a:hover {
+  background-color: #367c39; /* Darker green on hover for interactive feedback */
+}
+
+/* App.css */
+
+/* Basic CSS reset to ensure consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font and background setup for the entire app */
+body {
+  font-family: 'Roboto', sans-serif; /* 'Roboto' font is known for its readability and modern appearance */
+  background-color: #F0F2F5; /* Light grey background for a clean look */
+  color: #333; /* Dark grey color for text provides good contrast */
+}
+
+/* Header styles for branding and navigation */
+.header {
+  background-color: #4CAF50; /* Green color for header bar */
+  padding: 1rem 0; /* Vertical padding for header */
+  color: white; /* White text for contrast against the green background */
+}
+
+.header .logo {
+  font-size: 1.5rem; /* Larger font size for logo to stand out */
+  font-weight: bold; /* Bold font weight for emphasis */
+  text-decoration: none; /* No underline on logo text */
+  color: inherit; /* Inherits white color from parent */
+  margin-left: 1rem; /* Spacing from the left edge */
+}
+
+/* Navigation bar styles */
+.navigation {
+  display: flex; /* Flexible box layout for navigation items */
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  justify-content: center; /* Centers navigation items horizontally */
+}
+
+.navigation a {
+  text-decoration: none; /* No underline on navigation links */
+  color: white; /* White text color for readability */
+  padding: 0.5rem 1rem; /* Padding around navigation links */
+  display: block; /* Block display for better click area */
+}
+
+.navigation a:hover {
+  background-color: #367c39; /* Darker green on hover for interactive feedback */
+}
+
+/* Main content styling, holding filters and search results */
+.main-content {
+  display: flex; /* Flexible box layout for main content area */
+  justify-content: space-between; /* Spaces out child elements */
+  gap: 20px; /* Gap between child elements */
+  padding: 1rem; /* Padding inside the main content area */
+}
+
+/* Sidebar for filters */
+.filters {
+  background: white; /* White background for the filters sidebar */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  padding: 1rem; /* Padding inside the filters area */
+  width: 20%; /* Filters sidebar takes up 20% of the main content area */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.filters h2 {
+  color: #333; /* Dark grey color for headings */
+  margin-bottom: 1rem; /* Spacing below the heading */
+}
+
+/* Styling for the search results section */
+.search-results {
+  flex-grow: 1; /* Search results take up the remaining space */
+}
+
+/* Footer styling for consistent branding */
+.footer {
+  text-align: center; /* Center aligns the footer content */
+  padding: 1rem; /* Padding inside the footer */
+  background-color: #333; /* Dark background for the footer */
+  color: white; /* White text for contrast */
+}
+
+/* Responsive design for mobile and smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stacks filters and search results vertically on small screens */
+  }
+
+  .filters,
+  .search-results {
+    width: 100%; /* Full width for filters and search results on small screens */
+  }
+}
+
+/* Main content styling, holding filters and search results */
+.main-content {
+  display: flex; /* Flexible box layout for main content area */
+  justify-content: space-between; /* Spaces out child elements */
+  gap: 20px; /* Gap between child elements */
+  padding: 1rem; /* Padding inside the main content area */
+}
+
+/* Sidebar for filters */
+.filters {
+  background: white; /* White background for the filters sidebar */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  padding: 1rem; /* Padding inside the filters area */
+  width: 20%; /* Filters sidebar takes up 20% of the main content area */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.filters h2 {
+  color: #333; /* Dark grey color for headings */
+  margin-bottom: 1rem; /* Spacing below the heading */
+}
+
+/* Styling for the search results section */
+.search-results {
+  flex-grow: 1; /* Search results take up the remaining space */
+}
+
+/* Footer styling for consistent branding */
+.footer {
+  text-align: center; /* Center aligns the footer content */
+  padding: 1rem; /* Padding inside the footer */
+  background-color: #333; /* Dark background for the footer */
+  color: white; /* White text for contrast */
+}
+
+/* Responsive design for mobile and smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stacks filters and search results vertically on small screens */
+  }
+
+  .filters,
+  .search-results {
+    width: 100%; /* Full width for filters and search results on small screens */
+  }
+}
+
+:root {
+  --primary-color: #4CAF50;
+  --background-color: #F0F2F5;
+  --text-color: #333;
+  --link-hover-color: #367c39;
+}

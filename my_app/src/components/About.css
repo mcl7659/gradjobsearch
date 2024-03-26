@@ -1,0 +1,67 @@
+/* Main container for the about section */
+.about-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto; /* Centers the container with a top and bottom margin */
+    background-color: #fff; /* Light background for readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  /* Styling for main and section headings */
+  .about-container h1,
+  .about-container h2 {
+    color: #4CAF50; /* Highlight color for headings */
+  }
+  
+  .about-container h1 {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  
+  /* Paragraph styling for consistency and readability */
+  .about-container p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  /* Profile picture styling to match the theme */
+  .creator-profile-pic {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular shape */
+    margin: 20px auto;
+    border: 3px solid #4CAF50; /* Thematic border color */
+  }
+  
+  /* Links styling for visual consistency with the theme */
+  a {
+    color: #4CAF50;
+    text-decoration: underline; /* Underline for clarity */
+  }
+  
+  /* Subtle hover effect for links */
+  a:hover {
+    text-decoration: none; /* Removing underline on hover */
+    opacity: 0.8; /* Slight transparency for a hover effect */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 10px;
+    }
+  
+    .creator-profile-pic {
+      width: 100px; /* Smaller profile picture on small screens */
+      height: 100px;
+    }
+  }

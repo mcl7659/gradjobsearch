@@ -1,0 +1,43 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python -V  # Print out python version for debugging
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install -r requirements.txt
+
+build-job:
+  stage: build
+  script:
+    - echo "Install dependencies..."
+    - pip install -r requirements.txt
+
+unit-test-job:
+  stage: test
+  script:
+    - echo "Running unit tests..."
+    - pytest
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "Deploying to production..."
+    - deploy_production # This would be a script or command that deploys your app
+  environment:
+    name: production
+    url: https://yourproduction.url
+  only:
+    - main # or the branch you use for production releases
+
